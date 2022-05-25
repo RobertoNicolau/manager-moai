@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         background: var(--background);
         -webkit-font-smoothing: antialiased;
     }
-    body, input, textarea, button{
+    body, input, textarea, button, label{
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
     }
@@ -41,4 +41,4 @@ export const GlobalStyle = createGlobalStyle`
         opacity: 0.6;
         cursor: not-allowed;
     }
-`
+`;
