@@ -22,6 +22,7 @@ export const Container = styled.div`
   }
 
   .radio {
+    display: inline;
     margin: 0.5rem;
     input[type="radio"] {
       position: relative;
@@ -32,7 +33,7 @@ export const Container = styled.div`
           content: "";
           background: var(--shape);
           border-radius: 100%;
-          border: 1px solid darken(var(--shape), 25%);
+
           display: inline-block;
           width: 1.4em;
           height: 1.4em;
@@ -57,7 +58,7 @@ export const Container = styled.div`
       &:focus {
         + .radio-label {
           &:before {
-            gap: 1px;
+            gap: 3px;
             outline: #38caef;
             border-color: #38caef;
           }
@@ -138,19 +139,18 @@ export const Container = styled.div`
     box-shadow: none;
   }
 
-  /*   .radio__group {
-    margin-top: 10px;
-    width: 100%;
-    height: 2rem;
-    max-width: 180px;
-    border-radius: 0.5rem;
+  .select-label {
+    font-size: 1rem;
+    color: #9b9b9b;
+    font-weight: 500;
+    padding-right: 0.7rem;
+  }
+  .select-input {
+    font-size: 1rem;
+    height: 1.5rem;
     background: var(--shape);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    label {
-      color: #9b9b9b;
-    }
-  } */
+    border: none;
+    color: #fff;
+    line-height: 1rem;
+  }
 `;

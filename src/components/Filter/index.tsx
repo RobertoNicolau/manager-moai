@@ -3,17 +3,6 @@ import { Container } from "./style";
 export function SearchFilter() {
   return (
     <Container>
-      {/*       <form action="#">
-        <label htmlFor="grupo">Grupo</label>
-        <input type="text" id="grupo" />
-        <label htmlFor="cnpj">CNPJ</label>
-        <input type="number" />
-        <label htmlFor="nfe">NF-e</label>
-        <input type="radio" name="modalidade" id="nfe" />
-        <label htmlFor="nfce">NFC-e</label>
-        <input type="radio" name="modalidade" id="nfce" />
-      </form> */}
-
       <div className="form__group field">
         <input type="number" className="form__field" placeholder="Grupo" />
         <label htmlFor="cnpj" className="form__label">
@@ -26,7 +15,7 @@ export function SearchFilter() {
           Grupo
         </label>
       </div>
-      <div className="container">
+      <div className="radio__group" tabIndex={3}>
         <div className="radio">
           <input id="nfce" name="modalidade" type="radio" defaultChecked />
           <label htmlFor="nfce" className="radio-label">
@@ -40,10 +29,18 @@ export function SearchFilter() {
             NF-e
           </label>
         </div>
-        {/*         <label htmlFor="nfe">NF-e</label>
-        <input type="radio" name="modalidade" id="nfe" value="nfe" />
-        <label htmlFor="nfce">NFC-e</label>
-        <input type="radio" name="modalidade" id="nfce" value="nfce" /> */}
+      </div>
+      <div className="select">
+        <label htmlFor="situacao" className="select-label">
+          Situação
+        </label>
+        <select id="situacao" className="select-input">
+          <option value="todas">Todas</option>
+          <option value="autorizada">Autorizada</option>
+          <option value="cancelada">Cancelada</option>
+          <option value="rejeitada">Rejeitada</option>
+          <option value="inutilizada">Inutilizada</option>
+        </select>
       </div>
     </Container>
   );

@@ -36,6 +36,10 @@ export const GlobalStyle = createGlobalStyle`
     button{
         cursor: pointer;
     }
+    thead{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
     
     [disabled]{
         opacity: 0.6;
